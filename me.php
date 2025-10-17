@@ -15,7 +15,7 @@ function hng_task_zero()
         $res = json_decode($response);
 
         $time = new DateTime('now', new DateTimeZone('UTC'));
-        $timestamp = $time->getTimestamp();
+        $timestamp = $time->format('Y-m-d\TH:i:s\Z');
 
         $data = [
             "user" => [
